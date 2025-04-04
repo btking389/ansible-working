@@ -1,5 +1,5 @@
 ---
-- host: all
+- hosts: all
   tasks:
     - name: download transaction_list
       block:
@@ -19,4 +19,3 @@
         - debug: msg="Site appears to be down. Try again later."
       always:
         - debug: msg="Attempt completed."
-...
