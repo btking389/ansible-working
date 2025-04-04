@@ -7,7 +7,7 @@
             path: /home/ansible/lab-error-handlnig
             state: directory
             mode: '0755'
-        - get url:
+        - get_url:
             url: https://bit.ly/3dtJtR7
             dest: /home/ansible/lab-error-handling/transaction_list
         - replace:
